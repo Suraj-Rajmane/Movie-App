@@ -2,6 +2,13 @@ import React from 'react';
 
 
 const MovieList = ({movies, FavouriteComponent, handleFavouritesClick}) => {
+
+
+    if(!movies) {
+        return null;
+    }
+
+
     return (
         <>
             {movies.map((movie) => 

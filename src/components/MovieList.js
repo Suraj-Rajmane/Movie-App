@@ -4,13 +4,9 @@ import React from 'react';
 const MovieList = ({movies, FavouriteComponent, handleFavouritesClick}) => {
 
 
-    if(!movies) {
-        return null;
-    }
-
-
     return (
         <>
+        
             {movies.map((movie) => 
             <div className="d-flex justify-content-start m-3 image-container" key={movie.imdbID}>
                 <img src={movie.Poster} alt="movie"/>
@@ -19,7 +15,10 @@ const MovieList = ({movies, FavouriteComponent, handleFavouritesClick}) => {
                 </div>
             </div>
             )}
+        
+         
         </>
+        
     );
 };
 

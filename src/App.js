@@ -16,7 +16,7 @@ function App() {
 
   const getMovieRequest = async (searchValue) => {
 
-    const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=3877b0d8`;
+    const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=3877b0d8`;
 
     const response = await fetch(url);
 
